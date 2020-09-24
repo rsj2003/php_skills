@@ -11,7 +11,7 @@ if(ss()) {
   ]);
 }else {
   Route::reg([
-    ["get","/@MainController@login"],
-    ["get","/login@MainController@login_page"],
+    ["get","/@User@login"],
+    ["post","/login@User@loginAction"],
   ]);
 }
