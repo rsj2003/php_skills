@@ -16,5 +16,6 @@ if(ss()) {
     ["get","/join@User@join"],
     ["post","/login@User@loginAction"],
     ["post","/joinAction@User@joinAction"],
+    ["post","/email-check@User@emailCheck"],
   ]);
 }

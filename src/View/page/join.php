@@ -11,7 +11,10 @@
 <body>
   <div class="center">
     <form action="/joinAction" method="POST" class="join_form" id="join_form">
-      <input type="text" placeholder="이메일" id="id" name="id">
+      <div class="emailBox">
+        <input type="text" placeholder="이메일" id="id" name="id">
+        <div id="validateEmail">중복된 이메일입니다.</div>
+      </div>
       <input type="password" placeholder="비밀번호" id="pass" name="pass">
       <input type="password" placeholder="비밀번호 체크" id="pass_check" name="pass_check">
       <input type="text" placeholder="이름" id="name" name="name">
@@ -19,7 +22,7 @@
       <input type="file" placeholder="프로필 이미지" id="profile" name="profile" accept=".jpg, .png, .gif">
       <canvas id="code_cvs" width="300" height="50"></canvas>
       <input type="text" placeholder="캡챠" id="code" name="code">
-      <input type="submit" value="회원가입" id="submit">
+      <input type="submit" value="회원가입">
       <a href="/">로그인</a>
     </form>
   </div>

@@ -25,13 +25,13 @@ class DB {
     $row = self::getDB()->prepare($sql);
     $row->execute($d);
     
-    return $row->fetch();
+    return $row->fetch(\PDO::FETCH_OBJ);
   }
   
   public static function fetchAll($sql, $d) {
     $row = self::getDB()->prepare($sql);
     $row->execute($d);
     
-    return $row->fetchAll();
+    return $row->fetchAll(\PDO::FETCH_OBJ);
   }
 }
